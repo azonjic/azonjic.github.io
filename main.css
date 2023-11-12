@@ -1,26 +1,120 @@
+/*Universal*/
+
+/*setting font family*/
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+/*making all h3's underlined*/
+h3{
+    text-decoration: underline;
+}
+
 /*Nav*/
 
-nav {
-    background-color: #05836e;
+/*All in this section creates a Navbar with a teal background
+with the logo and site title floating left, and the links 
+floating to the right.*/
+
+/*Creating the navbar across the top of the screen*/
+.navContent{
+    width: 99%;
+    float: top;
+    background-color: #1bb59b;
+    padding: 10px;
 }
 
-nav li{
-    display: inline-block;
+/*aligning the links to the right of the navbar and centering
+them horizontally*/
+.Links{
+    float: right;
+    font-size: 16pt;
+    margin-top: 40px;
 }
 
-nav a{
+/*text style for text and anchors within the navbar*/
+nav a, nav p{
     display: inline-block;
-    padding: 1rem;
+    padding: .25rem;
     text-decoration: none;
     color:white;
     font-weight: bold;
 }
 
-nav a:hover{
-    background-color: black;
-    color: #9ae39a;
+/*making the text within navbar larger than anchors*/
+nav p {
+    font-size: 24pt;
 }
 
-.header {
-    background-color: #05836e;
+/*Sets a new color and bg color when hovering*/
+nav a:hover{
+    background-color: rgb(255, 89, 0);
+    color: rgb(255, 239, 192)
+}
+
+
+
+/*Main*/
+
+/*body background color set*/
+body {
+    background-color: antiquewhite
+}
+
+/*Creates style (border, align, and padding) for the images contained in the main section*/
+main img {
+    padding: 1rem;
+    border: 5px;
+    border-color: darkcyan;
+    border-style: dashed;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+
+}
+
+/*sets body DIV to have side borders, a white background, aligned center, and a consistent font size*/
+.main {
+    background-color: white;
+    margin: auto;
+    border-left: groove 30px#1bb59b;
+    ;
+    border-right: groove  30px #1bb59b;
+    padding: .5rem;
+    width: 75%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    font-size: 14pt;
+}
+
+/*changes anchor element colors within main*/
+.main a {
+    color:  rgb(255, 89, 0);
+}
+
+/*Info table*/
+
+/*both sets table layout and sizing*/
+table {
+    padding: 15px;
+    table-layout:fixed;
+    width:100%;
+}
+
+td {
+    padding: 15px;
+}
+
+/*Footer*/
+
+/*creates a similar style to the header but with the contact information
+but at the bottom of each site*/
+.footer {
+    background-color: #1bb59b;
+    text-align: center;
+    padding: .25rem;
+    color:white;
+    font-weight: bold;
+
 }

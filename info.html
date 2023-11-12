@@ -2,19 +2,35 @@
 <html lang="en">
 <head>
     <!-- Ashton Zonjic, 10/1/23, HTML -->
-    <title>Neurodiversity Today - Information</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Neurodiversity Today - Reach Out</title>
     <meta charset=UTF-8>
     <meta name="description" content="Discover the beauty of neurodiversity and how it celebrates the unique 
     strengths and perspectives of individuals with various neurological differences. Learn, share, and support 
     neurodiversity." />
-
+    <meta name="keywords" content="Neurodiversity, neurodivergent, neurodiverse, ADHD, autism, mental health">
+    <meta name="author" content="Ashton Zonjic">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPQMTPTKJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0YPQMTPTKJ');
+</script>
 <body>
     <header>
-        <div class="header">
-            <p><img src="images/infinity.png" alt="a rainbow infinity symbol" height="15"> Neurodiversity Today</p>
+        <div class="navContent">
+            <nav>
+                <p><img src="images/infinity.png" alt="a rainbow infinity symbol" width="50"> Neurodiversity Today</p>
+                <div class="Links">
+                    <a href="index.html">Home</a>||<a href="form.html">Reach Out!</a>
+                </div>
+            </nav>
         </div>
-    </header>
+</header>
     
     <main>
         <div class="main">
@@ -32,37 +48,43 @@
                 <tr>
                     <td><img src="images/what_is.jpg" height="200" 
                         alt="A rainbow infinity symbol with the text'What is 
-                        Neurodiversity?'"></td>
+                        Neurodiversity?'" id="what_is"></td>
 
-                    <td>the range of differences in individual brain function and 
+                    <td>
+                        <h3>Neurodiversity is...</h3>
+                        the range of differences in individual brain function and 
                         behavioral traits, regarded as part of normal variation in the
                         human population (used especially in the context of autistic 
-                        spectrum disorders).</td>
+                        spectrum disorders).
+                    </td>
                 </tr>
                 <tr>
 
-                    <td>Some disorders that are considered neurodiverse are:
+                    <td>
+                        <h3>Some neurodiverce disorders include...</h3>
                         <ul>
                             <li>Autism</li>
                             <li>Attention Deficit/Hyperactivity Disorder</li>
                             <li>Dyslexia</li>
                             <li>Dyspraxia</li>
                             <li>Tourette's</li>
-                            <li>... and many more learning and mental disabilities!</li>
+                            <li>... and many more learning and mental disabilities</li>
                         </ul>
                     </td>
 
-                    <td><img src="images/circles.png" height="400" 
+                    <td><img src="images/circles.png" height="350"
                         alt="A graphic design showing the different 
-                        neurodiverce disorders.">
+                        neurodiverce disorders." id="diagram">
                     </td>
                 </tr>
                 <tr>
                     <td><img src="images/brains2.png" height="200" 
                         alt="Image of three different silouettes of 
-                        people with illustrations in their heads."></td>
+                        people with illustrations in their heads." id="heads"></td>
 
-                    <td>Living with a neurodivergent mind changes everyday 
+                    <td>
+                        <h3>So, what is it like?</h3>
+                        Living with a neurodivergent mind changes everyday 
                         life in almost every way – especially since our 
                         ‘typical’ lives were created around a neurotypical 
                         lifestyle.<br>
@@ -78,8 +100,9 @@
                     </td>
                 </tr>
             </table>
-
-            <nav> <a href="index.html">Home</a> <a href="form.html">Reach Out!</a></nav>
+            <p>If you learned any new information, feel free to leave feedback
+                on our <a href="form.html">Form</a> page!
+            </p>
         </div>
     </main>
 

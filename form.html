@@ -13,53 +13,66 @@
     <meta name="author" content="Ashton Zonjic">
 </head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPQMTPTKJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0YPQMTPTKJ');
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YPQMTPTKJ">
 </script>
-<body>
+
+<body id="body">
     <header>
         <div class="navContent">
             <nav>
                 <p><img src="images/infinity.png" alt="a rainbow infinity symbol" width="50"> Neurodiversity Today</p>
                 <div class="Links">
-                    <a href="index.html">Home</a> || <a href="info.html">What is Neurodiversity?</a>
+                    <a href="index.html">Home</a> || <a href="info.html">What is Neurodiversity?</a>||<a href="form.html">Reach Out!</a>
                 </div>
             </nav>
         </div>
 </header>
     
     <main>
-        <div class="main">
-            <h2>Reach Out!</h2>
-            <p>Did you learn something new about the way our minds work? Are you or someone you know
-                neurodivergent and would like to share your experiences? Let me know down below - 
-                and thank you for viewing!
-            </p>
 
-            <div>
-                <form action="" target="_blank" method="GET">
-                    <p>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" placeholder="Your name here!">
-                    </p>
-                    <p>
-                        <label for="age">Age:</label>
-                        <input type="text" id="age" name="age" placeholder="Your age here!">
-                    </p>
-                    <p>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" placeholder="Type your message here!"
-                        rows="5" cols="25"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Submit">
-                    </p>
-                </form>
+        <div class="container">
+            <div class="toggle">
+                <div class="toggle-button" onclick="Animatedtoggle()"></div>
+            </div>
+            <div class="text">Toggle Dyslexia Font</div>
+        </div>
+
+        <script type="text/javascript" src="scripts.js">
+        </script>
+
+        <div class="main">
+            <div id="formContent">
+                <h2>Reach Out!</h2>
+                <p>Did you learn something new about the way our minds work? Are you or someone you know
+                    neurodivergent and would like to share your experiences? Let me know down below - 
+                    and thank you for viewing!
+                </p>
+
+                <div>
+                    <form action="" target="_blank" method="GET">
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name here!">
+                        </p>
+                        <p>
+                            <label for="age">Age:</label>
+                            <input type="text" id="age" name="age" placeholder="Your age here!">
+                        </p>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" placeholder="Type your message here!"
+                            rows="5" cols="25"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Submit">
+                        </p>
+                    </form>
+                </div>
+            </div>
+
+            <div id="thanks">
+                <img src="images/ThankYou.png" alt="a graphic reading 'THANK YOU'" height="150px">
+
             </div>
         </div>
     </main>

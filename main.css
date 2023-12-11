@@ -52,7 +52,57 @@ nav a:hover{
     color: rgb(255, 239, 192)
 }
 
+/*Acessibility*/
 
+.container{
+    position: absolute;
+    right: 13%;
+    width: 245px;
+    background-color: white;
+}
+
+.container .toggle{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 90px;
+    height: 50px;
+    background-color: darkcyan;
+    border-radius: 30px;
+}
+
+.container .toggle .toggle-button{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3%;
+}
+
+.container .toggle.active .toggle-button{
+    left: 45px;
+}
+
+.container .text{
+    position: absolute;
+    
+    left: 0;
+    padding-top: 20px;
+}
+
+@font-face { 
+    font-family: "OpenDyslexic"; 
+    src: url('https://dl.dropboxusercontent.com/s/qfpakpjedhsrdb9/OpenDyslexicAlta-Regular.ttf'); 
+} 
+
+body.active {
+    font-family: OpenDyslexic;
+    font-size: 12pt;
+ }
 
 /*Main*/
 
@@ -78,13 +128,12 @@ main img {
     background-color: white;
     margin: auto;
     border-left: groove 30px#1bb59b;
-    ;
     border-right: groove  30px #1bb59b;
-    padding: .5rem;
     width: 75%;
     margin-top: 25px;
     margin-bottom: 25px;
     padding: 25px;
+    padding-top: 50px;
     font-size: 14pt;
 }
 
@@ -104,6 +153,20 @@ table {
 
 td {
     padding: 15px;
+}
+
+/*Form Page*/
+
+#formContent{
+    display: inline-block;
+    width: 55%;
+}
+
+#thanks {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    margin-top: 100px;
 }
 
 /*Footer*/
